@@ -7,7 +7,7 @@ import MetricForm from "./form";
 
 function MetricsIndex() {
   const [data, setData] = useState({by_day: {}, by_minute: {}, by_hour: {}, metrics: []});
-  const cable = createConsumer('ws://localhost:3000/cable')
+  const cable = createConsumer(process.env.REACT_APP_WS)
 
   cable.subscriptions.create(
     { channel: 'MetricsChannel' },
