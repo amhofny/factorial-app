@@ -10,6 +10,6 @@ test('renders', () => {
   }]
   render(<Changeset versions={versions} />, {wrapper: BrowserRouter});
 
-  let items = screen.getByRole("listitem");
-  expect(items).toBeInTheDocument();
+  let items = screen.queryAllByRole("listitem");
+  expect(items).toHaveLength(1);
 });

@@ -2,18 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Configuration
+* create `.env` file in the root directory
+* add `REACT_APP_WS=ws://localhost:3000/cable` to the file and save
+* change the websocket url based on your rails server configuration
+
+### Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+* `npm start` Runs the app in the development mode.\
+* Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
-
-### `npm test`
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* `npm test` run the tests
